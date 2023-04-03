@@ -8,11 +8,11 @@
            |___/  
 ```
 
-# raylibstarter - minimal letterbox edition
+# raylibstarter - minimal edition
 
-[![CMakeBuilds](https://github.com/infomediadesign/git-schulung-pixelart-team03.git/actions/workflows/cmake.yml/badge.svg)](https://github.com/infomediadesign/git-schulung-pixelart-team03.git/actions/workflows/cmake.yml)
+[![CMakeBuilds](https://github.com/chfhhd/raylibstarter-minimal/actions/workflows/cmake.yml/badge.svg)](https://github.com/chfhhd/raylibstarter/actions/workflows/cmake.yml)
 
-A simple raylib project template for CMake and C/C++ including letterbox rendering and a fullscreen mode.
+A simple raylib project template for CMake and C/C++
 
 ## Usage
 
@@ -28,7 +28,7 @@ project(game VERSION 0.1 LANGUAGES CXX)
 
 ### Change the window size and switch to fullscreen
 
-The initial width and height of the output window can be adjusted in the `src/config.h.in` file.
+The width and height of the output window can be adjusted in the `src/config.h.in` file.
 
 By removing the comment
 
@@ -37,8 +37,6 @@ By removing the comment
 ```
 
 the project starts in full screen mode.
-
-While running the user can change the window size with the OS's regular means and switch to fullscreen with left alt + enter.
 
 ### Manage assets
 
