@@ -1,1 +1,1 @@
-Dies ist der Inhalt des neuen Files.
+Und so sehen Veränderungen innerhalb eines text files aus
