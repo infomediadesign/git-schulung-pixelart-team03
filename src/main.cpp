@@ -4,6 +4,7 @@
 #include <string>
 
 #include "raylib.h"
+#include "tileson.h"
 
 #include "config.h"
 
@@ -23,6 +24,10 @@ int main() {
     // ...
     Texture2D myTexture = LoadTexture("assets/graphics/backgrounds/testBackTiledFull.png");
     Texture2D Sprite = LoadTexture("assets/graphics/testSprite32.png");
+    tson::Tileson tileson;
+    auto MapPtr = tileson.parse("assets/data/tilemap.tmj");
+    tson::Map &Map = *MapPtr;
+
     RenderTexture2D canvas = LoadRenderTexture(1536, 864);
     float renderScale{}; // this and the line below are relevant to drawing later.
     Rectangle renderRec{};
