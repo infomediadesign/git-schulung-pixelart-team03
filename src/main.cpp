@@ -4,7 +4,7 @@
 #include <string>
 
 #include "raylib.h"
-#include "tileson.h"
+#include "tileson.hpp"
 
 #include "config.h"
 
