@@ -1,14 +1,27 @@
 #pragma once
 
-namespace Game {
-    inline constexpr const char* PROJECT_NAME = "@PROJECT_NAME@";
-    inline constexpr const char* PROJECT_VERSION = "@PROJECT_VERSION@";
-    inline constexpr const char* PROJECT_VERSION_MAJOR = "@PROJECT_VERSION_MAJOR@";
-    inline constexpr const char* PROJECT_VERSION_MINOR = "@PROJECT_VERSION_MINOR@";
-    inline constexpr const char* PROJECT_VERSION_PATCH = "@PROJECT_VERSION_PATCH@";
+#include <raylib.h>
 
-    inline constexpr int ScreenWidth = 960;
-    inline constexpr int ScreenHeight = 540;
+namespace GameSpace {
+    class Config final {
+    public:
+        inline static constexpr char* PROJECT_NAME = "@PROJECT_NAME@";
+        inline static constexpr char* PROJECT_VERSION = "@PROJECT_VERSION@";
+        inline static constexpr char* PROJECT_VERSION_MAJOR = "@PROJECT_VERSION_MAJOR@";
+        inline static constexpr char* PROJECT_VERSION_MINOR = "@PROJECT_VERSION_MINOR@";
+        inline static constexpr char* PROJECT_VERSION_PATCH = "@PROJECT_VERSION_PATCH@";
+
+        inline static constexpr int Def_ScreenWidth = 640;
+        inline static constexpr int Def_ScreenHeight = 360;
+
+        inline static constexpr int Def_TargetFPS = 60;
+        inline static constexpr int Def_WindowFlags = FLAG_WINDOW_UNDECORATED | FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT;
+
+        inline static constexpr int Def_ExitKey = KEY_NULL;
+
+        inline static constexpr bool Def_FullScreen = false;
+        inline static constexpr bool Def_Audio = false;
+    };
 
     //#define GAME_START_FULLSCREEN
 }
